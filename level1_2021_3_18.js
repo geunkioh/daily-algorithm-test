@@ -5,7 +5,7 @@ function solution(s) {
     for(let i=0; i<arr.length; i++){
         const string = arr[i].split('');
         for(let i=0; i<string.length; i++){
-        let str = string[i];
+        const str = string[i];
         answer += i%2 === 0 ? str.toUpperCase() : str.toLowerCase();
         }
         answer += arr.length - 1 === i ? "" : " ";
